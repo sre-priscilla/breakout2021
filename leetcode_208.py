@@ -58,7 +58,7 @@ class Trie:
         root = self.root
         for ch in word:
             index = ord(ch) - 97
-            print(root.to_map())
+            # print(root.to_map())
             if root.children[index] is None:
                 return False
             root = root.children[ord(ch) - 97]
